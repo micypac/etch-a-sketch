@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Font CDN links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font -->
+    <script src="https://kit.fontawesome.com/f62bba440f.js" crossorigin="anonymous"></script>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>TOP SKETCH</h1>
+    </header>
+    <main>
+        
+        <section id="controls">
+            <div id="slidecontainer">
+                <p><span id="gridsize-display"></span></p>
+                <input type="range" min="16" max="64" value="40" id="gridsize">
+            </div>            
+            <div>
+                <input type="button" id="color" name="color" value="Color" class="btn active">    
+                <input type="color" id="pen" name="pen" value="#000000">            
+            </div>
+            <div>
+                <input type="button" id="rainbow" name="rainbow" value="Rainbow" class="btn">
+            </div>
+            <div>
+                <input type="button" id="eraser" name="eraser" value="Eraser" class="btn">
+            </div>
+            <div class="clearcontainer">
+                <input type="button" id="clear" name="clear" value="Clear" class="btn">
+            </div>
+        </section>
+        <section id="board"></section>
+
+    </main>
+
+    <footer>
+        <p></p><small>Copyright © 2022 micypac</small> <a href="https://github.com/micypac/etch-a-sketch"><i class="fa-brands fa-github"></i></a></p>
+    </footer>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
